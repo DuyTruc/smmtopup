@@ -7,10 +7,10 @@ export default function handler(req, res) {
 
   const images = {};
   for (let i = 1; i <= 2040; i++) {
-    images[`anh${i}`] = `https://www.smmtopup.com/IMG (${i}).png`;
+    images[`anh${i}`] = `https://doodstream.us/IMG (${i}).png`;
   }
 
-  const baseImageUrl = images[slug] || "https://www.smmtopup.com/IMG (3).png"; // Default to anh3's image or adjust as needed
+  const baseImageUrl = images[slug] || "https://doodstream.us/IMG (3).png"; // Default to anh3's image or adjust as needed
 
   // ⭐️ THÊM UNIQUE ID để bypass Twitter cache
   const uniqueId = Date.now() + Math.random().toString(36).substring(2, 9);
@@ -18,7 +18,7 @@ export default function handler(req, res) {
 
   const title = '69:07';
   const description = 'Check out this amazing content!';
-  const url = `https://www.smmtopup.com/${slug}`;
+  const url = `https://doodstream.us/${slug}`;
 
   const html = `<!DOCTYPE html>
 <html>
